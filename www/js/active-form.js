@@ -155,23 +155,8 @@ function newFor2(){
 }
 
 function newComp(){
-	$(function() {
-	$.ajax({
-    type:           "GET",
-    url: "http://workshop.gaetan-marecat.fr/api/competence/all",
-    dataType: 'json'
-  }).success(function(data) {
-  	var i = 0;
-  	for(;data[i];){
-  		console.log(data[i].nom);
-    	$("#select").append('<option value="">'+ data[i].nom +'</option>');
-    	i++;
-    }
-  }).error(function(err){
-    console.log(err);
-  });
-  });
-  
+	
+
 
 
 	var element1 = document.getElementById("comp");
